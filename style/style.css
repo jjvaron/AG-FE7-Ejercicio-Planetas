@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  #fondo{
+  background: url(../img/sistema-solar.jpg);
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+  }
+
+  .contenedorTitulo{
+    background: rgba(251, 251, 251, 0.3);
+    color: #FFF;
+    font-family: 'Shadows Into Light';
+    font-size: 20px;
+    position: sticky;
+    top:50px;
+    width: 100%;
+  }
+  
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  th, td {
+    border-style:solid;
+    border-color: #fffb00;
+    text-align: center;
+  }
+
+  .contenedor{
+    text-align: center; 
+  }
