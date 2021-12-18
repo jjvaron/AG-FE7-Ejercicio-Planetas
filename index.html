@@ -8,53 +8,79 @@
     <link rel="stylesheet" href="./style/style.css">
 
     <title>Planetas</title>
+
 </head>
 
+
+
 <body>
-  <h1>Ejercicio Sistema Solar</h1>
+  <section id="fondo">
+    <header id="titulo">
+      <div class="contenedorTitulo">
+        <h1>Ejercicio Sistema Solar</h1>
+      </div>
+    </header>
 
-  <h1>Ejercicio arreglo de vectores</h1>
-
-  <table>
-    <thead>
-        <tr>
-            <th> Número de planeta</th>
-            <th> Planeta</th>
-            <th> Distancia (añosluz)</th>
-            <th> Tamaño</th>
+    <table id="tabla1" class="center">
+      <thead>
+          <tr >
+              <th style="color:white;"> Número de planeta</th>
+              <th style="color:white;"> Planeta</th>
+              <th style="color:white;"> Distancia (Km)</th>
+              <th style="color:white;"> Tamaño </th>
+          </tr>
+      </thead> 
+      <tbody>
+<!--         <tr>
+          <td> <input type ="number" id="n_planeta1" class="numeracion_planetas planeta1"> </td>
+          <td> <input type ="number" id="np_planeta1" class="nombre_planetas planeta1"> </td>
+          <td> <input type ="number" id="d_planeta1" class="distancia_planetas planeta1"> </td>
+          <td> <input type ="number" id="t_planeta1" class="tamanio_planetas planeta1"> </td>          
         </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td> <input type ="number" id="n_planeta1" class="numeracion_planetas planeta1"> </td>
-        <td> <input type ="number" id="np_planeta1" class="nombre_planetas planeta1"> </td>
-        <td> <input type ="number" id="d_planeta1" class="distancia_planetas planeta1"> </td>
-        <td> <input type ="number" id="t_planeta1" class="tamanio_planetas planeta1"> </td>          
-      </tr>
-      <tr>
-        <td> <input type ="number" id="n_planeta2" class="numeracion_planetas planeta2"> </td>
-        <td> <input type ="number" id="np_planeta2" class="nombre_planetas planeta2"> </td>
-        <td> <input type ="number" id="d_planeta2" class="distancia_planetas planeta2"> </td>
-        <td> <input type ="number" id="t_planeta2" class="tamanio_planetas planeta2"> </td>          
-      </tr>
+        <tr>
+          <td> <input type ="number" id="n_planeta2" class="numeracion_planetas planeta2"> </td>
+          <td> <input type ="number" id="np_planeta2" class="nombre_planetas planeta2"> </td>
+          <td> <input type ="number" id="d_planeta2" class="distancia_planetas planeta2"> </td>
+          <td> <input type ="number" id="t_planeta2" class="tamanio_planetas planeta2"> </td>          
+        </tr> -->
+        
+      </tbody>
       
-    </tbody>
+    </table>
+    <div class="contenedor">      
+      <button id="btn_filtrar" onclick=filtrarTabla() class="item">Filtrar</button>
+      <input  id="entrada_filtrar" class="entrada_form" type ="texto"  placeholder="Filtrar por planeta...">
+    </div>
+
+    <div class="contenedor">
+      <button id="btn_ordenar_dist" onclick=sortTable(2) class="item">Ordenar por Distancia</button>
+    </div>
     
-  </table>
-  <id>
-    <button id="btn_enviar_evaluacion" class="item">Enviar</button>
-    <button id="btn_ordenar_valores" class="item">Ordenar Valores</button>
-    <button id="btn_filtrar_distancia" class="item">Filtrar</button>
-    <button id="btn_buscar_planeta" class="item">Buscar</button>
-  </div> 
-  <script src = "./script/script.js"></script>
+    <div class="contenedor">
+      <button id="btn_ordenar_tam" onclick=sortTable(3) class="item">Ordenar por Tamaño</button>
+    </div> 
+
+    <div class="contenedor">      
+      <button id="btn_enviar_evaluacion" class="item">Enviar</button>
+      <input  id="entrada_filtrar" class="entrada_form" type ="texto"  placeholder="Email para enviar resultado... ">
+    </div>
+
+<!--     <div class="contenedor">
+      <button id="btn_enviar_evaluacion" class="item">Enviar</button>
+      <button id="btn_ordenar_valores" class="item">Ordenar Valores</button>
+      <button id="btn_filtrar_distancia" class="item">Filtrar</button>
+      <input  id="entrada_filtrar" class="entrada_form" type ="texto" placeholder="Filtrar numero del planeta...">
+      <button id="btn_buscar_planeta" class="item">Buscar</button>
+    </div>  -->
+
+
+    <script src = "./script/script.js"></script>
+
+  </section>
+
 </body>
 
 <footer>
-  <p>Jelitza Varón </p>
+  <p>Jelitza Varón Heredia </p>
   <p>2021</p>
-  <div id="container">
-    <div class="item"> <h3>Item Footer</h3> </div>
-
-</footer>
 </html>
